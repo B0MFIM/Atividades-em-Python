@@ -6,7 +6,14 @@ def tabuada(v):
     linha()
 
 def lerValor():
-    l = int(input("\033[0;32mDigite um valor inteiro: \033[m"))
+    while True:
+        try: 
+            l = int(input("\033[0;32mDigite um número inteiro: \033[m"))
+        except:
+            print("\033[0;31m< ERRO > Indique um número inteiro válido < ERRO >\033[m")
+            continue
+        else:
+            break
     return l
 
 def linha():
