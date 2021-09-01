@@ -1,2 +1,2 @@
 # Atividades-em-Python
- Primeiro repositório versionado de atividades em python.
+Meu primeiro repositório versionado de atividades em python.
