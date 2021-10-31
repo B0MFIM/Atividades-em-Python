@@ -1,16 +1,6 @@
-# Definindo Funções
-def lerNúmero():
-    while True:
-        try:
-            l = int(input("\033[0;33mDigite um número:\033[m "))
-        except:
-            print("\033[0;31m< ERRO > valor inserido inválido < ERRO >\033[m")
-            print("\033[0;32mTente novamente...\033[m")
-            continue
-        else:
-            break
-    return l
+from Biblioteca import leitura
 
+# Definindo Funções
 def exibir():
     r = n % 2
     if r == 0:
@@ -20,5 +10,5 @@ def exibir():
 
 
 # Programa Principal
-n = lerNúmero()
+n = leitura.lerNúmInteiro()
 exibir()

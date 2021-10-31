@@ -11,7 +11,6 @@ def lerCasa():
             break
     return l
 
-
 def lerSalário():
     while True:
         try:

@@ -1,5 +1,5 @@
 # Definindo Funções
-def lerNumero():
+def lerDistância():
     while True:
         try:
            l = int(input("\033[0;33mQual a distância de sua viagem?\033[m "))  
@@ -23,5 +23,5 @@ def exibir():
     print(f"\033[0;32mE o preço de sua viagem é de\033[m R${valores():.2f}")
 
 # Programa Principal
-d = lerNumero()
+d = lerDistância()
 exibir()
