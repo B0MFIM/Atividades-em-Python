@@ -1,3 +1,5 @@
+from Biblioteca import leitura
+
 # Definindo Métodos
 def exibição(v):
     linha()
@@ -23,13 +25,10 @@ def exibição(v):
         print(f"\033[0;31mNão, '{v}' não é um valor alfanumérico!\033[m")
         linha()
 
-def leitura():
-    l = input("\033[0;32mDigite algo a ser analisado: \033[m")
-    return l
-
 def linha():
     print("="*40)
 
+
 # Programa Principal
-v = leitura()
+v = leitura.ler()
 exibição(v)
