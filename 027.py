@@ -1,8 +1,6 @@
-# Definindo Funções
-def lerNome():
-    l = str(input("\033[0;32mDigite o seu nome:\033[m ")).strip().split()
-    return l
+from Biblioteca import leitura
 
+# Definindo Funções
 def exibir():
     print(f"\033[0;32mPrazer em conhecer você {nome[0]}\033[m")
     print(f"\033[0;32mSeu primeiro nome é\033[m {nome[0]}")
@@ -10,5 +8,5 @@ def exibir():
 
 
 # Programa Principal
-nome = lerNome()
+nome = leitura.lerNome()
 exibir()

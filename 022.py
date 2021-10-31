@@ -1,8 +1,6 @@
-# Definindo Funções
-def lerNome():
-    l = str(input("\033[0;32mDigite o seu nome:\033[m ")).strip()
-    return l
+from Biblioteca import leitura
 
+# Definindo Funções
 def upperName():
     return n.upper()
 
@@ -17,5 +15,5 @@ def exibir():
 
 # Programa Principal
 
-n = lerNome()
+n = leitura.lerNome()
 exibir()
